@@ -57,7 +57,7 @@ export BASIC_AUTH=""
 export SLACK_TOKEN=""
 export PAYLOAD_SECRET=""
 
-faas-cli cloud seal \
+faas-cli cloud seal -n openfaas-fn\
   --name $SCM_USER-ofc-bot-secrets \
   --literal basic-auth-password=$BASIC_AUTH \
   --literal token=$SLACK_TOKEN \
